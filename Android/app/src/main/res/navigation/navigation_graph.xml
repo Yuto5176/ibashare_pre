@@ -70,7 +70,7 @@
 
     <fragment
         android:id="@+id/seeMorePageFragment"
-        android:name="com.swift2021.ibashareandroid.SeeMorePageFragment"
+        android:name="com.swift2021.ibashareandroid.view.SeeMorePageFragment"
         android:label="fragment_see_more"
         tools:layout="@layout/fragment_see_more_page">
         <action
