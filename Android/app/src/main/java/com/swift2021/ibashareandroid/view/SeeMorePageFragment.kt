@@ -27,11 +27,17 @@ class SeeMorePageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_see_more_page, container, false)
+        binding = FragmentSeeMorePageBinding.inflate(inflater, container, false)
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = viewLifecycleOwner
+
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         setBackButtonEvent()
+
+        initEpoxy()
     }
 
     private fun setBackButtonEvent() {
@@ -44,12 +50,12 @@ class SeeMorePageFragment : Fragment() {
         val controller = ItemSeeMoreController(
             object : ItemSeeMoreController.SelectListener{
                 override fun onSelected() {
-                    Toast.makeText(context, "click", Toast.LENGTH_SHORT)
+                    Toast.makeText(context, "click", Toast.LENGTH_LONG)
                 }
             }
         )
         binding.recyclerView.setController(controller)
-        viewModel.nameList.observe(viewLifecycleOwner){
+        viewModel.placeList.observe(viewLifecycleOwner){
             controller.setData(it)
         }
     }
