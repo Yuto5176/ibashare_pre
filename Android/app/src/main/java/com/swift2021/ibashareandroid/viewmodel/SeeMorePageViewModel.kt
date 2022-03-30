@@ -10,7 +10,7 @@ import com.swift2021.ibashareandroid.model.SeeMorePageRepository
 class SeeMorePageViewModel(application: Application):AndroidViewModel(application) {
     private val seeMorePageRepository: SeeMorePageRepository = SeeMorePageRepository(application)
 
-    val nameList: LiveData<List<String>> = MutableLiveData(seeMorePageRepository.getSeeMoreName())
+    //val nameList: LiveData<List<String>> = MutableLiveData(seeMorePageRepository.getSeeMoreName())
 
     val placeList: LiveData<PlaceListData> = MutableLiveData(seeMorePageRepository.getPlaceListData())
 }

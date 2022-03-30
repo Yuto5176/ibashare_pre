@@ -6,7 +6,7 @@
     app:startDestination="@id/topPageFragment">
     <fragment
         android:id="@+id/topPageFragment"
-        android:name="com.swift2021.ibashareandroid.TopPageFragment"
+        android:name="com.swift2021.ibashareandroid.view.TopPageFragment"
         android:label="fragment_top"
         tools:layout="@layout/fragment_top_page">
         <action

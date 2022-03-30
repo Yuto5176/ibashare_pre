@@ -1,5 +1,13 @@
 package com.swift2021.ibashareandroid.viewmodel
 
-class TopPageViewModel {
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import com.swift2021.ibashareandroid.model.TopPageRepository
 
+class TopPageViewModel(application: Application): AndroidViewModel(application) {
+    private val topPageRepository: TopPageRepository = TopPageRepository()
+
+    val placeNameListTop01: LiveData<List<List<String>>> = MutableLiveData(topPageRepository.getPlaceNameTop())
 }

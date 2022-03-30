@@ -1,4 +1,4 @@
-package com.swift2021.ibashareandroid
+package com.swift2021.ibashareandroid.view
 
 import android.content.ContentValues.TAG
 import android.content.Context.MODE_PRIVATE
@@ -16,25 +16,34 @@ import android.widget.TextView
 import android.widget.ViewFlipper
 import androidx.constraintlayout.utils.widget.ImageFilterButton
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.card.MaterialCardView
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import com.swift2021.ibashareandroid.PlaceData
+import com.swift2021.ibashareandroid.R
+import com.swift2021.ibashareandroid.UserData
+import com.swift2021.ibashareandroid.databinding.FragmentTopPageBinding
+import com.swift2021.ibashareandroid.viewmodel.TopPageViewModel
 import kotlinx.android.synthetic.main.fragment_top_page.*
-import kotlinx.android.synthetic.main.fragment_top_page.view.*
 import kotlinx.android.synthetic.main.random_image_view.view.*
-import kotlinx.android.synthetic.main.toppage_genre_layout.*
 import kotlinx.android.synthetic.main.toppage_genre_layout.view.*
 
 
 class TopPageFragment : Fragment() {
+    private lateinit var binding: FragmentTopPageBinding
+    private val viewModel: TopPageViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_top_page, container, false)
+        binding = FragmentTopPageBinding.inflate(inflater, container, false)
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = viewLifecycleOwner
+
+        return binding.root
     }
 
     val bundle = Bundle()
