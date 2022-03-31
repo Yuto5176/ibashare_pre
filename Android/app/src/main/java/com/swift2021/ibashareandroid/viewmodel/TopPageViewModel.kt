@@ -10,4 +10,6 @@ class TopPageViewModel(application: Application): AndroidViewModel(application) 
     private val topPageRepository: TopPageRepository = TopPageRepository()
 
     val placeNameListTop01: LiveData<List<List<String>>> = MutableLiveData(topPageRepository.getPlaceNameTop())
+
+    val randomViewText: LiveData<List<String>> = MutableLiveData(topPageRepository.getRandomViewText())
 }
