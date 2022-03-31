@@ -4,8 +4,8 @@
 
     <data>
         <variable
-            name="viewModel"
-            type="com.swift2021.ibashareandroid.viewmodel.TopPageViewModel" />
+            name="randomText"
+            type="String" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:ellipsize="end"
                     android:singleLine="true"
-                    android:text="@{viewModel.randomViewText[0]}"
+                    android:text="@{randomText}"
                     android:textColor="@color/white"
                     android:textSize="24dp"
                     android:textStyle="bold"

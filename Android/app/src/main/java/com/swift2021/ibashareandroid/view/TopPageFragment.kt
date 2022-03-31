@@ -252,7 +252,7 @@ class TopPageFragment : Fragment() {
             listOf<String>("囲碁", "編み物", "将棋")
 
         // Firebaseから居場所名をセット
-        setPlaceName(randomTextViewList, "編み物")
+        //setPlaceName(randomTextViewList, "編み物")
         setPlaceName(recommendTextViewList, "将棋")
 
         // ジャンル名をFirestoreから

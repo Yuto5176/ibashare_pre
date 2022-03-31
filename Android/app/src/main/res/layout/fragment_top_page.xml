@@ -148,7 +148,8 @@
 
                                 <include
                                     android:id="@+id/random_image_include1"
-                                    layout="@layout/random_image_view" />
+                                    layout="@layout/random_image_view"
+                                    app:randomText="@{viewModel.randomViewText[0]}" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
                             <androidx.constraintlayout.widget.ConstraintLayout
@@ -158,7 +159,8 @@
 
                                 <include
                                     android:id="@+id/random_image_include2"
-                                    layout="@layout/random_image_view" />
+                                    layout="@layout/random_image_view"
+                                    app:randomText="@{viewModel.randomViewText[1]}" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
                             <androidx.constraintlayout.widget.ConstraintLayout
@@ -168,7 +170,8 @@
 
                                 <include
                                     android:id="@+id/random_image_include3"
-                                    layout="@layout/random_image_view" />
+                                    layout="@layout/random_image_view"
+                                    app:randomText="@{viewModel.randomViewText[2]}" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
                             <androidx.constraintlayout.widget.ConstraintLayout
@@ -178,7 +181,8 @@
 
                                 <include
                                     android:id="@+id/random_image_include4"
-                                    layout="@layout/random_image_view" />
+                                    layout="@layout/random_image_view"
+                                    app:randomText="@{viewModel.randomViewText[3]}" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
                             <androidx.constraintlayout.widget.ConstraintLayout
@@ -188,7 +192,8 @@
 
                                 <include
                                     android:id="@+id/random_image_include5"
-                                    layout="@layout/random_image_view" />
+                                    layout="@layout/random_image_view"
+                                    app:randomText="@{viewModel.randomViewText[4]}" />
                             </androidx.constraintlayout.widget.ConstraintLayout>
                         </ViewFlipper>
 
@@ -324,3 +329,4 @@
             </ScrollView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
