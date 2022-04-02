@@ -21,9 +21,9 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.material.card.MaterialCardView
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import com.swift2021.ibashareandroid.PlaceData
+import com.swift2021.ibashareandroid.model.PlaceData
 import com.swift2021.ibashareandroid.R
-import com.swift2021.ibashareandroid.UserData
+import com.swift2021.ibashareandroid.model.UserData
 import com.swift2021.ibashareandroid.databinding.FragmentTopPageBinding
 import com.swift2021.ibashareandroid.viewmodel.TopPageViewModel
 import kotlinx.android.synthetic.main.fragment_top_page.*

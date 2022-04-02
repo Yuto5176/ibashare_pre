@@ -1,4 +1,4 @@
-package com.swift2021.ibashareandroid
+package com.swift2021.ibashareandroid.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import kotlinx.android.synthetic.main.fragment_participant_page.*
+import com.swift2021.ibashareandroid.R
+import kotlinx.android.synthetic.main.fragment_place_detail_page.*
 
-class ParticipantPageFragment : Fragment() {
-
+class SelectTownPageFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -19,14 +19,15 @@ class ParticipantPageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_participant_page, container, false)
+        return inflater.inflate(R.layout.fragment_select_town_page, container, false)
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        setBackButtonEvent()
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
+    private fun setBackButtonEvent(){
         button_send.setOnClickListener {
-            findNavController().navigate(R.id.action_participant_to_place_detail)
+            findNavController().navigate(R.id.action_select_town_to_top)
         }
     }
 }

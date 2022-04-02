@@ -1,4 +1,4 @@
-package com.swift2021.ibashareandroid
+package com.swift2021.ibashareandroid.model
 
 import android.content.Context
 import android.content.SharedPreferences

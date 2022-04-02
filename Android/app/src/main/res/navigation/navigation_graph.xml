@@ -35,7 +35,7 @@
 
     <fragment
         android:id="@+id/placeDetailPageFragment"
-        android:name="com.swift2021.ibashareandroid.PlaceDetailPageFragment"
+        android:name="com.swift2021.ibashareandroid.view.PlaceDetailPageFragment"
         android:label="fragment_place_detail"
         tools:layout="@layout/fragment_place_detail_page">
         <action
@@ -84,7 +84,7 @@
 
     <fragment
         android:id="@+id/selectTownPageFragment"
-        android:name="com.swift2021.ibashareandroid.SelectTownPageFragment"
+        android:name="com.swift2021.ibashareandroid.view.SelectTownPageFragment"
         android:label="fragment_select_town"
         tools:layout="@layout/fragment_select_town_page">
         <action
@@ -98,7 +98,7 @@
 
     <fragment
         android:id="@+id/allReviewPageFragment"
-        android:name="com.swift2021.ibashareandroid.AllReviewPageFragment"
+        android:name="com.swift2021.ibashareandroid.view.AllReviewPageFragment"
         android:label="all_review_page_fragment"
         android:layout="@layout/fragment_all_review_page">
         <action
@@ -112,7 +112,7 @@
 
     <fragment
         android:id="@+id/participantPageFragment"
-        android:name="com.swift2021.ibashareandroid.ParticipantPageFragment"
+        android:name="com.swift2021.ibashareandroid.view.ParticipantPageFragment"
         android:label="participant_page_fragment"
         android:layout="@layout/fragment_participant_page">
         <action
@@ -125,17 +125,17 @@
     </fragment>
     <fragment
         android:id="@+id/searchPageFragment"
-        android:name="com.swift2021.ibashareandroid.SearchPageFragment"
+        android:name="com.swift2021.ibashareandroid.view.SearchPageFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search_page" />
     <fragment
         android:id="@+id/talkPageFragment"
-        android:name="com.swift2021.ibashareandroid.TalkPageFragment"
+        android:name="com.swift2021.ibashareandroid.view.TalkPageFragment"
         android:label="fragment_talk"
         tools:layout="@layout/fragment_talk_page" />
     <fragment
         android:id="@+id/myPageFragment"
-        android:name="com.swift2021.ibashareandroid.MyPageFragment"
+        android:name="com.swift2021.ibashareandroid.view.MyPageFragment"
         android:label="fragment_my_page"
         tools:layout="@layout/fragment_my_page" />
 
